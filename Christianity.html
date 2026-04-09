@@ -17,6 +17,7 @@ Because Jesus isn’t just history — He’s hope, life, and the ultimate truth
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="stylesheetchrist.css">
+<script src="Javascriptchrist.js" defer></script>
   <title>Christianity</title>
 </head>
 <audio id="bg-music" loop>
@@ -26,21 +27,6 @@ Because Jesus isn’t just history — He’s hope, life, and the ultimate truth
 <button id="music-toggle">
   🎵 Play Music
 </button>
-
-<script>
-  const music = document.getElementById("bg-music");
-  const toggleBtn = document.getElementById("music-toggle");
-
-  toggleBtn.addEventListener("click", () => {
-    if (music.paused) {
-      music.play();
-      toggleBtn.innerText = "🔇 Pause Music";
-    } else {
-      music.pause();
-      toggleBtn.innerText = "🎵 Play Music";
-    }
-  });
-</script>
 <body>
 
   <div class="top-menu">
@@ -100,23 +86,6 @@ Because Jesus isn’t just history — He’s hope, life, and the ultimate truth
       </ul>
     </details>
   </div>
-
-  <script>
-    // Accordion: only one open at a time
-    const details = document.querySelectorAll("details");
-    details.forEach((targetDetail) => {
-      targetDetail.addEventListener("toggle", () => {
-        if (targetDetail.open) {
-          details.forEach((detail) => {
-            if (detail !== targetDetail) {
-              detail.open = false;
-            }
-          });
-        }
-      });
-    });
-  </script>
-
 </body>
 </html>
 </center>
